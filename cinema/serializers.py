@@ -28,6 +28,7 @@ class MovieSerializer(serializers.ModelSerializer):
 
 
 class MovieListSerializer(MovieSerializer):
+
     genres = serializers.SlugRelatedField(
         many=True,
         read_only=True,
